@@ -1,0 +1,17 @@
+[debug] [2020-12-27T13:24:21.187Z] ----------------------------------------------------------------------
+[debug] [2020-12-27T13:24:21.193Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\91888\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only functions
+[debug] [2020-12-27T13:24:21.194Z] CLI Version:   8.17.0
+[debug] [2020-12-27T13:24:21.194Z] Platform:      win32
+[debug] [2020-12-27T13:24:21.194Z] Node Version:  v12.18.3
+[debug] [2020-12-27T13:24:21.197Z] Time:          Sun Dec 27 2020 18:54:21 GMT+0530 (India Standard Time)
+[debug] [2020-12-27T13:24:21.198Z] ----------------------------------------------------------------------
+[debug] [2020-12-27T13:24:21.198Z] 
+[debug] [2020-12-27T13:24:21.219Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-12-27T13:24:21.221Z] > authorizing via signed-in user
+[debug] [2020-12-27T13:24:21.222Z] [iam] checking project clone-6a438 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2020-12-27T13:24:21.233Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-6a438:testIamPermissions  
+ {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2020-12-27T13:24:24.262Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 27 Dec 2020 13:24:22 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1449","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-12-27T13:24:24.268Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/clone-6a438/serviceAccounts/clone-6a438@appspot.gserviceaccount.com:testIamPermissions  
+ {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2020-12-27T13:24:26.558Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 27 Dec 2020 13:24:25 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}

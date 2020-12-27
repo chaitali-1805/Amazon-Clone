@@ -25,7 +25,7 @@ function Login() {
         auth
             .createUserWithEmailAndPassword(email, password)
             .then((auth) => {
-                console.log(auth);
+                // console.log(auth);
                 if (auth) {
                     history.push('/')
                 }
@@ -45,7 +45,7 @@ function Login() {
                     Sign-in
                 </h1>
 
-                <form action="">
+                <form>
                     <h5>E-mail</h5>
                     <input type="text" value={email} onChange={e => setEmail(e.target.value)} />
 
