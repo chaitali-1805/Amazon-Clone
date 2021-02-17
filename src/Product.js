@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Product.css";
 import { useStateValue } from "./StateProvider";
+import Tryon from './Tryon'
+
 
 function Product({ id, title, image, price, rating }) {
+    const [modalShow, setModalShow] = React.useState(false);
 
     const [{ basket }, dispatch] = useStateValue();
+    // const [modalShow, setModalShow] = React.useState(false);
+
 
     // console.log('This is the basket', basket);
     const addToBasket = () => {
@@ -38,7 +43,16 @@ function Product({ id, title, image, price, rating }) {
                 </div>
             </div>
             <img src={image} alt="" />
+            <button onClick={() => setModalShow(true)}>Try-on</button>
+            {/* <Button variant="primary" onClick={() => setModalShow(true)}>Try-on</Button> */}
+
+            <Tryon
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+
+            />
             <button onClick={addToBasket}>Add to Basket</button>
+
         </div>
     );
 }
